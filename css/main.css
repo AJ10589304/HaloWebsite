@@ -1,0 +1,53 @@
+body {
+  padding-top: 100px;
+  background-image: url(../images/halobackground.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#logo{
+  animation-name: animateNavLogo;
+  animation-duration: 2s;
+}
+#navButton1, #navButton2 {
+  color: green;
+  animation-name: animateNavButton;
+  animation-duration: 2s;
+}
+#navButton1.active, #navButton2.active {
+  background-color: black;
+  color: green;
+}
+#navButton1.active:hover, #navButton2.active:hover{
+  color: green;
+}
+#navButton1:hover, #navButton2:hover, #searchInput{
+  background-color: black;
+  color: darkgreen;
+}
+#homeAnimate{
+  animation-name: animateHomeLogo;
+  animation-duration: 2s;
+}
+@keyframes animateHomeLogo{
+  0% { opacity: 0;}
+  50% {opacity: 0;}
+}
+@keyframes animateNavLogo{
+  0% {width: 200%; height: 200%; color: transparent;}
+  25% {width: 200%; height: 200%; color: transparent;}
+}
+@keyframes animateNavButton{
+  0% {visibility: hidden;}
+  100% {visibility: hidden;}
+}
+#deleteButton, #clearSearch {
+  background-image: linear-gradient(green, darkgreen);
+  color: black;
+  border-color: transparent;
+}
+#editButton, #resetView {
+  background-image: linear-gradient(grey, darkgrey);
+  color: black;
+  border-color: transparent;
+}
