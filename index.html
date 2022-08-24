@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>League Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> 
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <!--Header-Navigation-->
+    <nav class="navbar navbar-expand navbar-light shadow-lg bg-black bg-gradient bg-opacity-75 fixed-top">
+      <div  class="container-fluid">
+        <a class="navbar-brand text-white">
+          <h2 class="d-inline">
+            <img id="logo" class="rounded-circle" src="images/multiplayer-icon.svg" width="50" height="50" alt="">
+            HALO LEAGUE
+          </h2>
+        </a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a id="navButton1" class="nav-link active fw-bolder fs-4 m-1" data-bs-toggle="pill" href="#home">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a id="navButton2" class="nav-link fw-bolder fs-4 m-1" data-bs-toggle="pill" href="#team">TEAM</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--Aside Content-->
+    <div id="homeAnimate" class="container-fluid">
+      <div class="tab-content">
+        <div id="home" class="container-fluid tab-pane active">
+          <div class="row">
+            <div class="col-3 container-fluid shadow-lg bg-black bg-gradient bg-opacity-75 rounded-3 text-white text-center mx-auto">
+              <div class="text-start text-break pt-3">
+                <h3>UPCOMING EVENTS</h3>
+                <ul>
+                  <li>FRI 02/11 5pm-10pm: Big Team Battle</li>
+                  <li>SAT 02/12 5pm-10pm: Fiesta</li>
+                  <li>SUN 02/13 6pm-11pm: Big Team Battle Tournament</li>
+                  <li>THU 02/17 7pm-10pm: SWAT</li>
+                  <li>FRI 02/18 5pm-10pm: Big Team Battle</li>
+                  <li>SAT 02/19 5pm-10pm: Team Battle</li>
+                  <li>SUN 02/20 6pm-11pm: CTF Tournament</li>
+                  <li>FRI 02/25 5pm-10pm: CTF</li>
+                  <li>SAT 02/26 5pm-10pm: Oddball</li>
+                  <li>SUN 02/27 6pm-11pm: Big Team Battle Tournament</li>
+                </ul>
+              </div>
+              <img src="images/MasterChief.jpg" class="img-fluid w-100 rounded-3" alt="">
+              <img src="images/HCS-logo.jpg" class="img-fluid w-75 p-3" alt="">
+            </div>
+            <!--Home Content-->
+            <div class="col-8 container-fluid">
+              <div class="container-fluid shadow-lg rounded-3 w-100 p-3 mb-2 bg-opacity-75 bg-gradient bg-black text-white">
+                <h1>HOME PAGE</h1>
+                <p>Welcome to HALO LEAGUE!</p>
+                <p>Here we play for real! Work hard! Win big.</p>
+                <p>Here we have regularly scheduled game sessions every Friday and Saturday, Sunday is our Tournament Night where our top teams compete, and new teams try and qualify to play in the tournament.</p>
+                <p>Visit our Team page to see what teams we have competing and more information on who is currently in the lead.</p>
+                <p>All Event information is found on the left of the website.</p>
+                <p>May the best spartan win.</p>
+              </div>
+              <div class="container-fluid shadow-lg rounded-3 w-100 p-3 my-2 bg-black bg-gradient bg-opacity-75">
+              <iframe class="w-100" height="350" src="https://www.youtube.com/embed/xFSlAeu6-M4" title="YouTube video player" allowfullscreen></iframe>
+              </div><div class="container-fluid shadow-lg rounded-3 w-100 p-3 my-2 bg-black bg-gradient bg-opacity-75">
+              <iframe class="w-100"  height="350" src="https://www.youtube.com/embed/4i86Ckj8xKk" title="YouTube video player" allowfullscreen></iframe>
+              </div>
+              <div class="container-fluid shadow-lg rounded-3 w-100 p-3 mt-2 bg-black bg-gradient bg-opacity-75 text-white">
+                <h2>GAMEPLAY RULES</h2>
+                <p>Make sure you uphold the game rules, break any rule and you will be banned!</p>
+                <ul>
+                  <li>No hacking the game, this includes modified controllers, aim bots, etc. We are here to play for reals not cheat. </li>
+                  <li>Sportsmanship is of the utmost importance, we are all here to have fun and enjoy Halo, do not ruin it for others.</li>
+                  <li>Inappropriate language is not tolerated! this includes what is said in chat, and what is said to other participants outside of the game.</li>
+                  <li>If you signed up and are scheduled to play in a Tournament you must show.</li>
+                  <li>You are the only person allowed to use your profile, its cheating to allow someone else to play for you.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Team Page Content-->
+        <div id="team" class="container-fluid tab-pane">
+          <div class="row ">
+            <div class="col-9">
+                <!--Bootstrap Table-->
+                <div class="shadow-lg rounded-3 p-3 bg-black bg-opacity-75 bg-gradient mb-3" id="teamPageWrapper">
+                
+                </div> 
+              <!--Other Team Info-->
+              <div class="container-fluid shadow-lg rounded-3 w-100 p-3 mb-3 bg-black bg-gradient bg-opacity-75 text-white table-responsive">
+                <h2>LATEST RESULTS</h2> 
+                <table class="table table-dark table-hover">
+                  <thead>
+                    <tr>
+                      <th class="bg-black bg-gradient" scope="col">Team Name</th>
+                      <th class="bg-black bg-gradient" scope="col">Wins</th>
+                      <th class="bg-black bg-gradient" scope="col">Loses</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th class="bg-black bg-opacity-50" scope="row">SENTINELS</th>
+                      <td class="bg-black bg-opacity-50">10</td>
+                      <td class="bg-black bg-opacity-50">1</td>
+                    </tr>
+                    <tr>
+                      <th class="bg-black bg-opacity-50" scope="row">EUNITED</th>
+                      <td class="bg-black bg-opacity-50">9</td>
+                      <td class="bg-black bg-opacity-50">2</td>
+                    </tr>
+                    <tr>
+                      <th class="bg-black bg-opacity-50" scope="row">SPACESTATION</th>
+                      <td class="bg-black bg-opacity-50">7</td>
+                      <td class="bg-black bg-opacity-50">4</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="container-fluid shadow-lg rounded-3 w-100 p-3 mb-3 bg-black bg-gradient bg-opacity-75 text-white">
+                <h2>VENUE INFORMATION</h2>
+                <p>Bobs CPU Palace: Mon-Sat 2pm-8pm</p>
+                <p>Desktop Warriors: Thu-Sun 3pm-12pm</p>
+                <p>Gaming Cafe: Fri-Sun 4pm-1am</p>
+                <p>Electric House: Mon-Fri 10am-8pm</p>
+              </div>
+            </div>
+            <!--Aside Content-->
+            <div class="col-2 m-1 shadow-lg bg-black bg-gradient bg-opacity-75 rounded-3 mx-auto">
+              <img src="images/Cortana.jpg" class="img-fluid img w-100 pt-2" alt="">
+              <img src="images/HCS-logo.jpg" class="img-fluid w-100 p-3" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Site Footer-->
+    <div class="container-fluid mt-5" style="font-size: 10px;">
+      <p>Copyright information: The creator of this website does not claim that the photos, logos, images, names, are of their creation. According to section 107 of the Copyright Act, the materials used in this website: videos, photos, logos, and names, were used under the Fair Use for nonprofit educational purposes. Below are listed the names and websites where the information was obtained. The Halo name/logo/photos: https://www.xbox.com/en-US/games/halo-infinite, cloud9 name/logo: https://twitter.com/cloud9, faze clan/logo: https://twitter.com/fazeclan, optic gaming name/logo: https://twitter.com/optic, eunited name/logo: https://twitter.com/eunited, pioneers name/logo: https://twitter.com/pioneersgg, g2 esports name/logo: https://twitter.com/g2esports, spacestation name/logo: https://twitter.com/spacestation, sentinels name/logo: https://twitter.com/sentinels</p>
+    </div>
+    <script src="https://unpkg.com/ejs@3.1.3/ejs.min.js"></script>
+    <script src="js/models/mock_team_data.js"></script>
+    <script src="js/models/team_view_model.js"></script>
+    <script src="js/models/app_view_model.js"></script>
+    <script src="js/models/local_storage_service.js"></script>
+    <script src="js/views/list_page_view.js"></script>
+    <script src="js/controllers/app_controller.js"></script>
+    <script>
+      $(document).ready(function(){
+        
+         (async () => {
+            app = new AppController(appViewModel); 
+            await app.render();
+           })();
+     })
+
+  </script>
+  </body>
+</html>
