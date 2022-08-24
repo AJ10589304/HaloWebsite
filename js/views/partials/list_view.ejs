@@ -1,0 +1,33 @@
+
+  <!-- List View EJS Template-->
+<table id='<%=view.list.id%>' class="<%=view.list.tableClasses%>">
+  <!-- Output Table Headers -->
+  <tr>  
+    <% view.columns.forEach( function(col, key){ %>
+      <th class="<%=view.list.thClasses%>" data-name="<%=col.name%>"> <%=col.label%>
+        <i id="<%=col.name%>-asc" class="fa fa-arrow-up" aria-hidden="true" style="display:none"></i>
+        <i id="<%=col.name%>-desc" class="fa fa-arrow-down" aria-hidden="true" style="display:none"></i>
+      </th> 
+    <% }) %>
+    <th class="<%=view.list.thClasses%>"> Actions </th>
+  </tr>
+  <!-- Output Table data rows -->
+  <tbody>
+    <% view.data.forEach( function(dat, key){ %>
+      <tr data-bs-toggle="popover" data-id="<%=dat.id%>">
+        <% view.columns.forEach( function(col, key){%> 
+          <td class="<%=view.list.tdClasses%>"><%=dat[col.name]%></td>
+        <% }) %> 
+        <td class="<%=view.list.tdClasses%>">
+          <button type="button" class="btn btn-secondary" id="editButton">
+            <img src="images/pencil-square.svg" width="16" height="16" alt="">
+          </button>
+          <button type="button" class="btn btn-primary" id="deleteButton" data-bs-toggle="modal" data-bs-target="#myModal" data-id="<%=dat.id%>" data-name="<%=dat.name%>">
+            <img src="images/trash.svg" width="16" height="16" alt="">
+          </button>
+        </td>
+      </tr>
+    <% }) %>
+  </tbody>
+</table>
+ 

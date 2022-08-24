@@ -1,0 +1,45 @@
+<main class="">
+    <div class="row">
+      <div class="col-4">
+            <h1 class="text-white"> <%=view.list.listTitle%> </h1>
+          </div>
+           <div class="col-8 d-flex justify-content-end">
+              <input id="searchInput" class="w-75 me-2 p-1 rounded-3 fw-bolder fs-5" placeholder="Search...">
+              <button id="clearSearch" class="btn btn-primary rounded-3 fw-bolder fs-6">CLEAR</button>
+            </div>
+       
+        </div>
+      <div class="col-12">
+        <div id="<%=view.alertContainerId%>" class="mt-2"></div>
+        <div id="tableContainer" class="mt-2">
+  
+        </div>
+        <button id="resetView" class="btn btn-primary clear-search-btn ml-2 fw-bolder fs-6">RESET VIEW</button>
+      </div>
+    </div>
+  </main>
+  
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Delete Item?</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+          This action cannot be undone!
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">No</button>
+          <button id="yesButton" type="button" class="btn btn-primary" data-bs-dismiss="modal">Yes</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
